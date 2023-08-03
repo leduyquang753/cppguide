@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+	<head>
+		<meta charset="utf-8"/>
+		
+		<title><%= tabTitle %> | C++ hiện đại</title>
+		<meta property="og:title" content="Test"/>
+		<meta property="og:type" content="article"/>
+		<meta property="og:url" content="<%= url %>"/>
+		<meta property="og:locale" content="vi_VN"/>
+		<meta name="theme-color" content="#606060"/>
+		<meta property="article:author" content="Lê Duy Quang"/>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<style>
+			@import "<%= baseUrl %>/mainStyles-screen.css" screen;
+			@import "<%= baseUrl %>/mainStyles-print.css" print;
+			@import "<%= baseUrl %>/syntaxHighlight.css";
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="managedWidth headerWithNavigation">
+				<nav><ul>
+					<li><a href="/">leduyquang753.github.io</a></li>
+				</ul></nav>
+				<% for (let part of breadcrumb) { %>
+					<div class="breadcrumb"><a href="<%= baseUrl + part.url %>"><%- part.html %></a></div>
+				<% } %>
+				<h1><%- name %></h1>
+			</div>
+		</header>
+		<div class="managedWidth">
+			<div class="showToc">
+				<img src="<%= baseUrl %>/assets/icons/list.svg" alt="Hiện mục lục">
+				<span>Hiện mục lục</span>
+			</div><%
+			function renderInThisPage(entries) {
+				%><ul><%
+				for (const entry of entries) {
+					%><li><a href="#<%= entry.id %>"><%= entry.name %></a></li><%
+					if (entry.subsections.length !== 0) renderInThisPage(entry.subsections);
+				}
+				%></ul><%
+			} %>
+			<% if (pageToc.length !== 0) { %>
+				<nav class="inThisPage"><details>
+					<summary>Trong trang này</summary>
+					<% renderInThisPage(pageToc); %>
+				</details></nav>
+			<% } %>
+			<main>
+				<%- content %>
+			</main>
+			<nav class="prevAndNext"><ul>
+				<% if (previousUrl !== null) { %>
+					<li><a href="<%= baseUrl + previousUrl %>">◄ Trước</a></li>
+				<% } else { %>
+					<li></li>
+				<% } %>
+				<% if (nextUrl !== null) { %>
+					<li><a href="<%= baseUrl + nextUrl %>">Sau ►</a></li>
+				<% } else { %>
+					<li></li>
+				<% } %>
+			</ul></nav>
+		</div>
+		<footer>
+			Bản quyền © 2023 Lê Duy Quang. Nội dung được phân phối với giấy phép
+			<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC&nbsp;BY&#8209;SA&nbsp;4.0</a>.
+		</footer>
+		<div class="tocContainer tocContainer-hidden tocCloser" data-is-toc-closer="true"><div class="toc">
+			<div class="tocHeader">
+				<span>Mục lục</span>
+				<img
+					class="tocCloser"
+					data-is-toc-closer="true"
+					src="<%= baseUrl %>/assets/icons/close.svg"
+					alt="Đóng mục lục"
+				>
+			</div>
+			<div class="tocContent"><%
+				function renderToc(entries) {
+					%><ul><%
+					for (const entry of entries) {
+						if (entry.id === 0) continue;
+						if (entry.id == id) { %><li id="currentEntry"><% } else { %><li><% }
+						%><a href="<%= baseUrl + entry.url %>"><%- entry.name %></a></li><%
+						if (entry.subentries !== null) renderToc(entry.subentries);
+					}
+					%></ul><%
+				} %>
+				<% renderToc(toc) %>
+			</div>
+		</div></div>
+		<script src="<%= baseUrl %>/pageScript.js"></script>
+	</body>
+</html>
