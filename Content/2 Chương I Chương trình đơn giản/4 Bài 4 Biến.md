@@ -1,8 +1,8 @@
 Bài 4. Biến
 # 1. Khai báo biến
 
-Trong [bài trước](!2.3) ta đã nhắc đến dòng `int a;` để khai báo một vị trí lưu dữ liệu. Thuật ngữ chính để gọi các vị
-trí lưu dữ liệu này là "biến", có lẽ là nói tắt từ nghĩa của thuật ngữ tiếng Anh "variable" là "biến đổi được".
+Trong [bài 3](!2.3) ta đã nhắc đến dòng `int a;` để khai báo một vị trí lưu dữ liệu. Thuật ngữ chính để gọi các vị trí
+lưu dữ liệu này là "biến", có lẽ là nói tắt từ nghĩa của thuật ngữ tiếng Anh "variable" là "biến đổi được".
 
 Mỗi biến có một tên gọi, thuật ngữ gọi là định danh (identifier) và được chỉ định một kiểu (type), là loại giá trị có
 thể được chứa vào biến đó. Trong ví dụ `int a;`, `a` là định danh của biến và `int` là kiểu của biến.
@@ -50,10 +50,13 @@ Thực ra, khi bạn không thực hiện khởi tạo biến, C++ thực hiện
 biến kiểu số không thực hiện cho biến một giá trị ban đầu. Bạn nên thực hiện khởi tạo cho tất cả các biến ngay khi khai
 báo để tránh việc quên đưa một giá trị vào biến trước khi truy cập và làm cho chương trình trở nên không hợp lệ.
 
+C++ có nhiều cú pháp khởi tạo khác nhau như trên để phục vụ cho những trường hợp sử dụng khác nhau, công dụng cụ thể của
+các cú pháp sẽ được trình bày trong các bài sau.
+
 # 3. Khai báo và khởi tạo nhiều biến
 
 Ta có thể khai báo và khởi tạo nhiều biến cùng kiểu trong một câu lệnh khai báo. Đầu tiên ta viết kiểu của các biến, sau
-đó ta viết tên và cú pháp khởi tạo của các biến, phân cách bằng dấu phẩy `,`:
+đó ta viết tên và cú pháp khởi tạo của các biến, phân cách bằng dấu phẩy `,`, ví dụ:
 
 ```cpp
 int startX{10}, startY{20};

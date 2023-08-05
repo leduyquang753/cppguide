@@ -1,6 +1,6 @@
 Bài 2. Chuẩn bị
 Trước khi chúng ta bước vào những kiến thức của ngôn ngữ C++, bài này sẽ cung cấp một số điều cần biết và một số bước
-chuẩn bị để ngay sau khi học từng bài, bạn có thể viết và chạy được các chương trình đơn giản viết bằng C++.
+chuẩn bị để ngay sau khi học từng bài, bạn có thể viết và chạy được các chương trình viết bằng C++.
 
 # 1. Các phiên bản C++
 

@@ -5,7 +5,7 @@ Dưới đây là một số thông tin mở đầu mà các bạn chuẩn bị 
 
 # 1. Lí do viết trang hướng dẫn này
 
-Trải qua quá trình ngồi trên ghé nhà trường các cấp và quan sát cũng như tiếp xúc với những người khác cũng học lập
+Trải qua quá trình ngồi trên ghế nhà trường các cấp và quan sát cũng như tiếp xúc với những người khác cũng học lập
 trình, mình nhận thấy có hai yếu tố chính ảnh hưởng đến chất lượng dạy học lập trình nói chung và ngôn ngữ C++ nói
 riêng:
 
@@ -15,7 +15,7 @@ Việt.
 
 Yếu tố thứ hai đã đẩy nhiều người học vào những vấn đề không đáng có trong quá trình học, dẫn đến tâm lí sợ hãi, cho
 rằng "C++ là một ngôn ngữ cũ kĩ, khó sử dụng" và từ đó lời đồn xấu được lan truyền cho đến nay. Đúng là C++ tính đến
-thời điểm viết bài này đã ngót ngét 40 năm tuổi, nhưng các lần cập nhật thường xuyên đã và đang thổi những luồng sức
+thời điểm viết bài này đã ngót nghét 40 năm tuổi, nhưng các lần cập nhật thường xuyên đã và đang thổi những luồng sức
 sống mới vào ngôn ngữ và giúp nó đứng vững dưới vai trò trụ cột cho đến ngày nay. Ngoài ra cũng đừng quên rằng một số
 ngôn ngữ khác như Java, JavaScript, Python cũng đã có tuổi đời trên dưới 30.
 

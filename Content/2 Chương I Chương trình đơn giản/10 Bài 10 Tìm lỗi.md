@@ -5,10 +5,10 @@ này sẽ giới thiệu một số kĩ thuật tìm lỗi cơ bản.
 
 # 1. Quan sát hành vi chương trình
 
-Khi chương trình có hành vi không đúng như ý muốn, trước hết bạn nên thực hiện quan sát cụ thể xem hành vi không mong
-muốn đó cụ thể là như thế nào. Trong quá trình đó, bạn cũng nên ghi lại các dữ liệu đầu vào được cung cấp cho chương
-trình. Từ những thông tin đó, bạn có thể dự đoán được phần nào của chương trình có khả năng liên quan đến lỗi, tạo cơ sở
-thông tin phục vụ cho các kĩ thuật tìm lỗi tiếp theo.
+Khi chương trình có hành vi không đúng như ý muốn, trước hết bạn nên thực hiện quan sát xem hành vi không mong muốn đó
+cụ thể là như thế nào. Trong quá trình đó, bạn cũng nên ghi lại các dữ liệu đầu vào được cung cấp cho chương trình. Từ
+những thông tin đó, bạn có thể dự đoán được phần nào của chương trình có khả năng liên quan đến lỗi, tạo cơ sở thông tin
+phục vụ cho các kĩ thuật tìm lỗi tiếp theo.
 
 # 2. Xem xét lại mã nguồn
 

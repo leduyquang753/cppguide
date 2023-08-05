@@ -12,7 +12,7 @@ chiều tương tác đó.
 std::cout << <nội dung>;
 ```
 
-`std::cout` là một đối tượng được cung cấp bới C++ thể hiện chỗ tiếp nhận nội dung viết lên màn hình, dấu `<<` thể hiện
+`std::cout` là một đối tượng được cung cấp bởi C++ thể hiện chỗ tiếp nhận nội dung viết lên màn hình, dấu `<<` thể hiện
 thao tác viết, nó có chiều từ phải sang trái tương ứng với việc nội dung được truyền vào `std::cout`. Và cần nhớ rằng
 câu lệnh kết thúc bằng dấu chấm phẩy `;`.
 
