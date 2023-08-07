@@ -253,3 +253,4 @@ for (let i = 0; i != toc.length; i++) {
 }
 
 fs.cpSync("Assets", path.join(outputPath, "assets"), { recursive: true });
+fs.copyFileSync("404.html", path.join(outputPath, "404.html"));

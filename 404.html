@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8"/>
+		<title>leduyquang753.github.io</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<style>
+			:root {
+				--backgroundColor: #606060;
+				--headerBackgroundColor: #404040;
+				--accentBackgroundColor: #202020;
+				--alternateBackgroundColor: #808080;
+				--highlightColor: #B0B0B0;
+			}
+
+			body {
+				margin: 0px;
+				background-color: var(--backgroundColor);
+				color: white;
+			}
+
+			body {
+				font-family:
+					"Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, Verdana, sans-serif,
+					"Apple Color Emoji", "Segoe UI Emoji";
+			}
+
+			h1, h2, h3 {
+				font-weight: normal;
+			}
+
+			h1 {
+				margin-block-start: 0.67em;
+				margin-block-end: 0.2em;
+			}
+
+			a {
+				color: #D9D9FF;
+				text-decoration: none;
+			}
+
+			a:visited {
+				color: #F2D3F7;
+			}
+
+			::selection {
+				background-color: #808080;
+			}
+
+			.managedWidth {
+				box-sizing: border-box;
+				margin-left: auto;
+				margin-right: auto;
+				padding: 0 1rem;
+				width: min(100%, 720px);
+			}
+
+			@media screen and (min-width: calc(720px / 0.7)) {
+				.managedWidth {
+					margin-left: 15%;
+					margin-right: 15%;
+					width: unset;
+				}
+			}
+
+			.headerSection {
+				display: flex;
+				flex-direction: column;
+				background-color: var(--headerBackgroundColor);
+				min-height: max(30vh, 200px);
+				margin-bottom: 2rem;
+			}
+
+			.headerSection > div {
+				flex: 1;
+			}
+
+			.headerWithNavigation {
+				position: relative;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.headerWithNavigation > nav {
+				flex: 1;
+			}
+
+			.headerWithNavigation > nav ul {
+				margin: 1rem 0 0 0;
+				padding: 0;
+				display: flex;
+				flex-direction: row;
+				gap: 1em 2em;
+			}
+
+			.headerWithNavigation > nav li {
+				list-style-type: none;
+			}
+
+			.headerWithNavigation > nav a {
+				color: white;
+			}
+
+			.headerWithNavigation > nav a[href="/"] {
+				font-weight: bold;
+			}
+
+			.headerSection h1 {
+				display: block;
+				margin-bottom: 2rem;
+				font-size: 3em;
+			}
+
+			.headerSection p {
+				margin-bottom: 2rem;
+			}
+
+			.bottomFill {
+				height: 2rem;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="headerSection">
+			<div class="managedWidth headerWithNavigation">
+				<nav><ul>
+					<li><a href="/">leduyquang753.github.io</a></li>
+					<li><a href="https://leduyquang753.name.vn">Main site</a></li>
+				</ul></nav>
+				<h1><b>404</b> Not found</h1>
+			</div>
+		</header>
+		<main class="managedWidth">
+			<p>
+				The requested resource could not be found on this website. Check if you have the correct address. If
+				the address is indeed correct, the resource could have been
+				<a href="https://en.wikipedia.org/wiki/Link_rot">removed</a>.
+			</p>
+		</main>
+		<div class="bottomFill"></div>
+	</body>
+</html>
