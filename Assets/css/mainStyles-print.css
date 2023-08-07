@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+:root {
+	--containerBackgroundColor: #E0E0E0;
+	--headerBackgroundColor: #D0D0D0;
+	--alternateBackgroundColor: #F0F0F0;
+	--highlightColor: #D0D0D0;
+}
+
+code {
+	--black: #282C34;
+	--blue: #126EBA;
+	--cyan: #368B96;
+	--green: #608D3F;
+	--purple: #8729A3;
+	--red: #A8242F;
+	--white: #646E82;
+	--yellow: #AA7B22;
+	--brightBlack: #666666;
+	--brightBlue: #0070CC;
+	--brightCyan: #01B3CB;
+	--brightGreen: #56C903;
+	--brightPurple: #9C00CC;
+	--brightRed: #C90310;
+	--brightWhite: #666666;
+	--brightYellow: #CA8402;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+header nav {
+	display: none;
+}
+
+header h1 {
+	font-size: 2.5rem;
+}
+
+body {
+	font-family:
+		"Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, Verdana, sans-serif,
+		"Apple Color Emoji", "Segoe UI Emoji";
+}
+
+h1, h2, h3, h4, h5, h6 {
+	break-after: avoid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+p {
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	text-indent: 1em;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+:not(pre) > code {
+	border-radius: 4px;
+	padding: 0.1em 0.25em;
+	background-color: var(--containerBackgroundColor);
+}
+
+pre {
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	border-radius: 8px;
+	padding: 1em;
+	background-color: var(--containerBackgroundColor);
+	tab-size: 4;
+	overflow: auto;
+}
+
+table {
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	border-collapse: collapse;
+}
+
+th, td {
+	border: 1px solid black;
+	padding: 0.25em 0.5em;
+}
+
+thead {
+	background-color: var(--headerBackgroundColor);
+	font-weight: bold;
+}
+
+tr:nth-child(2n) {
+	background-color: var(--alternateBackgroundColor);
+}
+
+blockquote {
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline: 0;
+	border-left: 4px solid var(--highlightColor);
+	padding: 0 1em;
+}
+
+main > img {
+	max-width: 100%;
+	transform: translate(-1em);
+}
+
+footer {
+	margin-top: 2rem;
+	text-align: center;
+	font-size: 0.75em;
+}
+
+.headerSection h1 {
+	display: block;
+	margin-bottom: 2rem;
+	font-size: 3em;
+}
+
+.showToc {
+	display: none;
+}
+
+.inThisPage {
+	display: none;
+}
+
+.prevAndNext {
+	display: none;
+}
+
+.bottomFill {
+	height: 2rem;
+}
+
+.tocContainer {
+	display: none;
+}
+
+.sectionLink {
+	color: black;
+}
+
+.noteBox {
+	--noteBoxColor: var(--headerBackgroundColor);
+	width: 100%;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	border: 4px solid var(--noteBoxColor);
+	border-radius: 8px;
+	break-inside: avoid;
+}
+.noteBox > div:first-child {
+	width: 100%;
+	padding: calc(0.5em - 4px) 0.5em 0.5em 0.5em;
+	background: var(--noteBoxColor);
+	font-weight: bold;
+}
+.noteBox > div:first-child::before {
+	filter: saturate(0);
+}
+.noteBox > div:not(:first-child) {
+	padding: 0 1em;
+}
+
+.note > div:first-child::before {
+	content: "ℹ️ ";
+}
+
+.warning > div:first-child::before {
+	content: "⚠️ ";
+}
+
+.danger > div:first-child::before {
+	content: "❗ ";
+}

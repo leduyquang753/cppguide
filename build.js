@@ -251,3 +251,5 @@ for (let i = 0; i != toc.length; i++) {
 		i == toc.length-1 ? null : toc[i+1].url
 	);
 }
+
+fs.cpSync("Assets", path.join(outputPath, "assets"), { recursive: true });
