@@ -1,0 +1,57 @@
+{
+	"name": "Build",
+	"on": "workflow_dispatch",
+	"jobs": {
+		"main": {
+			"name": "Main",
+			"runs-on": "ubuntu-latest",
+			"permissions": {
+				"pages": "write",
+				"id-token": "write"
+			},
+			"environment": {
+				"name": "github-pages",
+				"url": "${{steps.deployment.outputs.page_url}}"
+			},
+			"steps": [
+				{
+					"name": "Checkout source",
+					"uses": "actions/checkout@v3"
+				},
+				{
+					"name": "Prepare Node environment",
+					"uses": "actions/setup-node@v3",
+					"with": {
+						"node-version": "latest",
+						"cache": "npm",
+						"cache-dependency-path": "package-lock.json"
+					}
+				},
+				{
+					"name": "Install Node packages",
+					"run": "npm ci"
+				},
+				{
+					"name": "Create build folder",
+					"run": "mkdir Build"
+				},
+				{
+					"name": "Build",
+					"run": "node build.js \"https://leduyquang753.github.io/cppguide\" Build"
+				},
+				{
+					"name": "Submit build output",
+					"uses": "actions/upload-pages-artifact@v2",
+					"with": {
+						"path": "Build"
+					}
+				},
+				{
+					"name": "Deploy",
+					"id": "deploy",
+					"uses": "actions/deploy-pages@v2"
+				}
+			]
+		}
+	}
+}
