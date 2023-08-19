@@ -79,7 +79,7 @@ namespace Ngoai {
 	namespace Trong {
 		const int so{1};
 		
-		void inCacSo() {
+		void vietCacSo() {
 			std::cout << so << "\n"; // Cho ra 1.
 			std::cout << ::so << "\n"; // Cho ra 2.
 			std::cout << ::Ngoai::so << "\n"; // Cho ra 3.
