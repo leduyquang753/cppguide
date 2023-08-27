@@ -8,3 +8,6 @@ trị ban đầu bằng 0 và `true` nếu khác 0. Đây là một thao tác ch
 Một giá trị kiểu `bool` có thể được ngầm định chuyển đổi thành một kiểu số nguyên. Giá trị mới là `0` nếu giá trị ban
 đầu là `false` và `1` nếu giá trị ban đầu là `true`. Giá trị kiểu `bool` không thể được chuyển đổi trực tiếp thành kiểu
 số thực.
+
+Mặc dù giá trị của kiểu `bool` chỉ cần 1 bit để biểu diễn, kích cỡ thực tế của kiểu không được C++ quy định cố định mà
+phụ thuộc vào môi trường, tuy nhiên thông thường sẽ là 1 byte.

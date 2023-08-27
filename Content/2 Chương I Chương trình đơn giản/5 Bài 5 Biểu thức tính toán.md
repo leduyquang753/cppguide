@@ -10,7 +10,7 @@ bản, `a` và `b` đại diện cho các giá trị đưa vào toán tử đó 
 - `a + b`: Cho tổng của `a` và `b`.
 - `a - b`: Cho hiệu của `a` và `b`.
 - `a * b`: Cho tích của `a` và `b`.
-- `a / b`: Cho thương của `a` và `b`.
+- `a / b`: Cho thương nguyên của `a` và `b`.
 - `a % b`: Cho phần dư của phép chia hai số nguyên `a` và `b`.
 
 Khi thực hiện phép chia hai số nguyên, kết quả sẽ là một số nguyên bằng phần nguyên của kết quả phép chia. Phần dư của

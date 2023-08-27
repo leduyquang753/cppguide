@@ -103,7 +103,8 @@ giá trị mới sẽ là giá trị của kiểu đích gần nhất so với g
 
 ::: note note Ghi chú
 Cũng như khi chuyển đổi thu hẹp kiểu số nguyên, thao tác chuyển đổi giá trị từ một kiểu số thực lớn hơn sang một kiểu số
-thực nhỏ hơn là một thao tác chuyển đổi thu hẹp, và bạn nên thực hiện tường minh sử dụng `static_cast`.
+thực nhỏ hơn là một thao tác chuyển đổi thu hẹp, trừ khi giá trị gốc là một hằng số nằm trong phạm vi của kiểu đích, và
+bạn nên thực hiện tường minh sử dụng `static_cast`.
 :::
 
 # 4. Chuyển đổi giá trị giữa kiểu số nguyên và kiểu số thực

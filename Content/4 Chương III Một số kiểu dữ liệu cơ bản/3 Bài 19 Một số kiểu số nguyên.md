@@ -69,9 +69,6 @@ Các chữ cái được sử dụng trong giá trị số nguyên không phân 
 `LL` phải cùng viết hoa hoặc cùng viết thường. Thứ tự của các hậu tố không quan trọng, nhưng thường `U` sẽ được viết
 trước.
 
-Trong phần lớn các trường hợp, miễn là bạn để ý đến giới hạn của kiểu bạn đang sử dụng, bạn sẽ không cần phải quá lo
-lắng đến việc viết hậu tố xác định kiểu của giá trị trực tiếp số nguyên.
-
 # 3. Chuyển đổi giá trị giữa các kiểu số nguyên chính
 
 Giá trị của một trong những kiểu số nguyên nói trên có thể được ngầm định chuyển đổi thành một kiểu bất kì trong các
@@ -89,6 +86,7 @@ nguyên đích sau khi chuyển đổi như sau:
 ::: note note Ghi chú
 Do giá trị của một kiểu số nguyên có thể thay đổi khi chuyển đổi thành một kiểu số nguyên nhỏ hơn, thao tác này là một
 thao tác chuyển đổi "thu hẹp" và việc giá trị thay đổi có thể là một điều không mong muốn. Cú pháp khởi tạo danh sách
-không cho phép thao tác này và trong các trường hợp khác các bộ dịch cũng có thể đưa ra cảnh báo. Vì vậy, nếu có mong
-muốn thực hiện chuyển đổi thu hẹp giá trị số nguyên, bạn nên thực hiện chuyển đổi tường minh sử dụng `static_cast`.
+không cho phép thao tác này, trừ khi giá trị ban đầu là một hằng số nằm trong phạm vi của kiểu của biến, và trong các
+trường hợp khác các bộ dịch cũng có thể đưa ra cảnh báo. Vì vậy, nếu có mong muốn thực hiện chuyển đổi thu hẹp giá trị
+số nguyên, bạn nên thực hiện chuyển đổi tường minh sử dụng `static_cast`.
 :::
