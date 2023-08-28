@@ -97,13 +97,13 @@ và của `b`.
 Toán tử `a ^ b` là toán tử xor, mỗi bit của giá trị kết quả là 1 khi hai bit tương ứng của `a` và `b` khác nhau, hoặc 0
 nếu giống nhau.
 
-Toán tử `a << b` là toán tử dịch trái, dãy bit của giá trị kết quả là dãy bit của `a` sau khi bỏ `b` bit đầu và thêm `b`
-bit 0 vào phía sau. Thao tác toán tương ứng là nhân `a` với 2<sup>`b`</sup> rồi lấy phần dư khi chia cho 2<sup>*n*</sup>
-với *n* là số bit của `a`.
+Toán tử `a << b` là toán tử dịch trái, dãy bit kết quả có giá trị số nguyên không dấu bằng với giá trị số nguyên không
+dấu của `a` nhân với 2<sup>`b`</sup> rồi lấy phần dư khi chia cho 2<sup>*n*</sup>, với *n* là số bit của `a`. Thao tác
+tương ứng là xóa `b` bit đầu của dãy bit của `a` sau đó thêm `b` bit 0 vào đằng sau.
 
-Toán tử `a >> b` là toán tử dịch phải, dãy bit của giá trị kết quả là dãy bit của `a` sau khi bỏ `b` bit cuối và thêm
-`b` bit giống với bit đầu tiên của `a` vào phía trước. Thao tác toán tương ứng là lấy phần nguyên của thương khi chia
-`a` cho 2<sup>`b`</sup>.
+Toán tử `a >> b` là toán tử dịch phải, cho ra phần nguyên của phép chia `a` cho 2<sup>`b`</sup>. Thao tác tương ứng là
+xóa `b` bit cuối của dãy bit của `a` sau đó thêm `b` bit vào phía trước, các bit được thêm là 0 nếu `a` không có dấu và
+giống với bit đầu tiên của `a` nếu `a` có dấu.
 
 Hai toán tử `a << b` và `a >> b` có một số quy luật đặc thù sau:
 

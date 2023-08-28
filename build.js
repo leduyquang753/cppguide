@@ -241,14 +241,14 @@ function renderEntry(id, urlToRoot, url, breadcrumb, entry, baseInputPath, baseO
 }
 
 const baseBreadcrumb = [{ html: "C++ hiện đại", url: "" }];
-for (let i = 0; i != toc.length; i++) {
+for (let i = 0; i !== toc.length; i++) {
 	const entry = toc[i];
 	renderEntry(
 		entry.id, ".", entry.url,
 		// Don't display a breadcrumb for the root page of the guide.
 		entry.outputName === "index.html" ? [] : baseBreadcrumb,
 		entry, "Content", outputPath,
-		i == toc.length-1 ? null : toc[i+1].url
+		i === toc.length-1 ? null : toc[i+1].url
 	);
 }
 
