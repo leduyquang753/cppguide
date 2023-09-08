@@ -79,7 +79,7 @@
 					alt="Đóng mục lục"
 				>
 			</div>
-			<div class="tocContent"><%
+			<nav class="tocContent"><%
 				function renderToc(entries) {
 					%><ul><%
 					for (const entry of entries) {
@@ -91,7 +91,7 @@
 					%></ul><%
 				} %>
 				<% renderToc(toc) %>
-			</div>
+			</nav>
 		</div></div>
 		<script src="<%= baseUrl %>/assets/js/pageScript.js"></script>
 	</body>
