@@ -86,8 +86,7 @@ C++ có một bộ quy luật để quyết định thứ tự tính toán trong
 - Khi một hàm được thực hiện, hàm đó được thực hiện toàn bộ trước khi thực hiện các thao tác tiếp theo.
 
 Danh sách đầy đủ của các quy luật có thể được xem trên
-[CPPReference](https://en.cppreference.com/w/cpp/language/eval_order#.22Sequenced_before.22_rules_.28since_C.2B.2B11.29)
-[ (https://en.cppreference.com/w/cpp/language/eval_order)]{.printAlt}.
+[CPPReference](https://en.cppreference.com/w/cpp/language/eval_order#.22Sequenced_before.22_rules_.28since_C.2B.2B11.29)[ (https://en.cppreference.com/w/cpp/language/eval_order)]{.printAlt}.
 
 Nếu một phần biểu thức không rơi vào các quy luật thứ tự tính toán, việc thực hiện tính toán diễn ra không theo một
 trình tự xác định nào cả, thậm chí các phần nhỏ hơn có thể được thực hiện tính toán xen kẽ với nhau, thứ tự của lần thực

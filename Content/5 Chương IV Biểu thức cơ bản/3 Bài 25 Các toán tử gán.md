@@ -36,3 +36,8 @@ Trong thực tế, việc sử dụng các toán tử gán trong các biểu th�
 sử dụng chúng như những câu lệnh riêng và không sử dụng giá trị trả về của chúng. Một ngoại lệ là khi ta muốn gán một
 giá trị cho nhiều biến khác nhau thì ta có thể sử dụng nối tiếp toán tử `a = b`, ví dụ `a = b = c = 0;`, nếu đặt các dấu
 ngoặc vào cho rõ thứ tự thực hiện thì sẽ là `a = (b = (c = 0)));`
+
+::: note warning Lưu ý
+Dấu bằng `=` trong cú pháp khởi tạo sao chép không phải là toán tử gán. Trong các ngữ cảnh khác nhau, một số kí hiệu sẽ
+có các ý nghĩa khác nhau.
+:::
