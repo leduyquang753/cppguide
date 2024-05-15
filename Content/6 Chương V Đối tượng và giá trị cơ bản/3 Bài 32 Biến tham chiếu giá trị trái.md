@@ -1,7 +1,7 @@
 Bài 32. Biến tham chiếu giá trị trái
 # 1. Khai báo và cách sử dụng cơ bản
 
-Ta đã được biết về giá trị trái ở [bài trước](!6.3). C++ có cơ chế cho phép ta thực hiện lưu trữ các giá trị trái vào
+Ta đã được biết về giá trị trái ở [bài trước](!6.2). C++ có cơ chế cho phép ta thực hiện lưu trữ các giá trị trái vào
 các biến. Chúng được gọi là các biến tham chiếu giá trị trái, tiếng Anh là "lvalue reference".
 
 ## a) Khai báo

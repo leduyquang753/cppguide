@@ -2,7 +2,6 @@
   "dependencies": {
     "cookie-parser": "^1.4.6",
     "ejs": "^3.1.9",
-    "express": "^4.18.2",
     "highlight.js": "^11.8.0",
     "markdown-it": "^13.0.1",
     "markdown-it-anchor": "^8.6.7",

@@ -26,8 +26,8 @@ Thực ra, khi đặt một thành phần vào trong một không gian tên thì
 định danh thành phần đó. Định danh đầy đủ của thành phần gồm định danh của không gian tên chứa nó, hai dấu hai chấm `::`
 rồi đến định danh riêng của thành phần. Do đó, nếu hai thành phần có định danh giống nhau nhưng nằm trong hai không gian
 tên khác nhau, chúng sẽ có hai định danh đầy đủ khác nhau và do đó không bị trùng tên. Nếu tất cả các bộ phận đều sử
-dụng không gian tên để chứa các thành phần của nó, trong không gian tên toàn cục sẽ chỉ còn lại tên của các bộ phận, đó
-là một số lượng tên ít hơn hẳn và do đó sẽ hầu như không có nguy cơ bị trùng tên.
+dụng không gian tên để chứa các thành phần của chúng, trong không gian tên toàn cục sẽ chỉ còn lại tên của các bộ phận,
+đó là một số lượng tên ít hơn hẳn và do đó sẽ hầu như không có nguy cơ bị trùng tên.
 
 Ta có thể viết nhiều khai báo không gian tên với cùng một định danh, khi đó chúng sẽ vẫn được coi là cùng một không gian
 tên. Không gian tên là một thành phần toàn cục, nên ta cũng có thể khai báo một không gian tên lồng bên trong một không
